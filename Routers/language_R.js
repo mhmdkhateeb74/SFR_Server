@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 module.exports = router;
 
-const language_Mid = require("../Middlewares/language_Mid.js");
+const language_Mid = require("../Middlewares/language_Mid");
 
 router.post("/Add", [language_Mid.AddItem], (req, res) => {
     if(res.ok)

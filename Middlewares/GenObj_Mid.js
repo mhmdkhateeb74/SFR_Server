@@ -11,3 +11,7 @@ async function QueryExecSimpleReply(Query,values=[]) {
         // return res.status(500).json({message: err});
     }
 }
+
+module.exports = {
+    QueryExecSimpleReply,
+}
