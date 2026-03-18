@@ -25,7 +25,7 @@ async function AddItem(req,res,next){
 
 async function UpdateItem(req,res,next){
     let id              = req.params.id         || -1 ;
-    let name              = req.params.name         || "" ;
+    let name              = req.body.name         || "" ;
 
     let Query = `UPDATE ${tableName} SET `;
          Query += `name   = ?    `;
